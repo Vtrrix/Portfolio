@@ -133,8 +133,8 @@ body #burger {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   cursor: pointer;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0);
   z-index: 300;
   position: fixed;
@@ -516,6 +516,60 @@ body #top #about .randomwords .r6 {
   font-size: 5rem;
 }
 
+@media (max-width: 1070px) {
+  body #top #about .randomwords .R1 {
+    margin-bottom: -20px;
+  }
+  body #top #about .randomwords .R2 {
+    margin-bottom: -7px;
+  }
+  body #top #about .randomwords .r1 {
+    font-size: 3.5rem;
+  }
+  body #top #about .randomwords .r2 {
+    font-size: 1rem;
+  }
+  body #top #about .randomwords .r3 {
+    font-size: 0.5rem;
+  }
+  body #top #about .randomwords .r4 {
+    font-size: 1rem;
+  }
+  body #top #about .randomwords .r5 {
+    font-size: 1.5rem;
+  }
+  body #top #about .randomwords .r6 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 490px) {
+  body #top #about .randomwords .R1 {
+    margin-bottom: -10px;
+  }
+  body #top #about .randomwords .R2 {
+    margin-bottom: -3px;
+  }
+  body #top #about .randomwords .r1 {
+    font-size: 2.25rem;
+  }
+  body #top #about .randomwords .r2 {
+    font-size: 1rem;
+  }
+  body #top #about .randomwords .r3 {
+    font-size: 1rem;
+  }
+  body #top #about .randomwords .r4 {
+    font-size: 1.65rem;
+  }
+  body #top #about .randomwords .r5 {
+    font-size: 1.25rem;
+  }
+  body #top #about .randomwords .r6 {
+    font-size: 1.75em;
+  }
+}
+
 body #top #about #skillset {
   background: rgba(136, 136, 136, 0.671);
   position: absolute;
@@ -540,6 +594,10 @@ body #top #about #skillset {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   flex-wrap: wrap;
+}
+
+body #top #about #skillset .skill {
+  padding: 10px;
 }
 
 body #top #about #skillset .skill img {
@@ -912,7 +970,6 @@ body #bottom #contact form .buttonContainer button {
   text-align: center;
   font-size: 16px;
   width: 100%;
-  overflow-y: hidden;
   padding: 18px 35px;
   cursor: pointer;
 }
@@ -921,5 +978,31 @@ body #bottom #contact form .buttonContainer button:hover, body #bottom #contact 
   background-color: #2004c4;
   -webkit-box-shadow: 0 0 10px #2004c4;
           box-shadow: 0 0 10px #2004c4;
+}
+
+@media (max-width: 800px) {
+  body .body {
+    overflow: auto;
+  }
+  body .body #top,
+  body .body #bottom {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  body .body #landing {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  body .body #about {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
 }
 /*# sourceMappingURL=style.css.map */
