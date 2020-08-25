@@ -692,6 +692,14 @@ body #bottom #projects .container .card:nth-child(1) .icon {
 }
 
 body #bottom #projects .container .card:nth-child(2) .icon {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(100, 100, 100, 0.322)), to(rgba(0, 0, 0, 0.295))), url("../img/projects/firegram.png");
+  background-image: linear-gradient(rgba(100, 100, 100, 0.322), rgba(0, 0, 0, 0.295)), url("../img/projects/firegram.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body #bottom #projects .container .card:nth-child(3) .icon {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(100, 100, 100, 0.322)), to(rgba(0, 0, 0, 0.295))), url("../img/projects/todo list.png");
   background-image: linear-gradient(rgba(100, 100, 100, 0.322), rgba(0, 0, 0, 0.295)), url("../img/projects/todo list.png");
   background-size: cover;
@@ -699,7 +707,7 @@ body #bottom #projects .container .card:nth-child(2) .icon {
   background-position: center;
 }
 
-body #bottom #projects .container .card:nth-child(3) .icon {
+body #bottom #projects .container .card:nth-child(4) .icon {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(100, 100, 100, 0.322)), to(rgba(0, 0, 0, 0.295))), url("../img/projects/weather (2).png");
   background-image: linear-gradient(rgba(100, 100, 100, 0.322), rgba(0, 0, 0, 0.295)), url("../img/projects/weather (2).png");
   background-size: cover;
@@ -707,7 +715,7 @@ body #bottom #projects .container .card:nth-child(3) .icon {
   background-position: center;
 }
 
-body #bottom #projects .container .card:nth-child(4) .icon {
+body #bottom #projects .container .card:nth-child(5) .icon {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(100, 100, 100, 0.322)), to(rgba(0, 0, 0, 0.295))), url("../img/projects/music maker.png");
   background-image: linear-gradient(rgba(100, 100, 100, 0.322), rgba(0, 0, 0, 0.295)), url("../img/projects/music maker.png");
   background-size: cover;

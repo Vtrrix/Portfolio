@@ -538,8 +538,17 @@ body {
             background-repeat: no-repeat;
             background-position: center;
           }
-
           &:nth-child(2) .icon {
+            background-image: linear-gradient(
+                rgba(100, 100, 100, 0.322),
+                rgba(0, 0, 0, 0.295)
+              ),
+              url("../img/projects/firegram.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          &:nth-child(3) .icon {
             background-image: linear-gradient(
                 rgba(100, 100, 100, 0.322),
                 rgba(0, 0, 0, 0.295)
@@ -550,7 +559,7 @@ body {
             background-position: center;
           }
 
-          &:nth-child(3) .icon {
+          &:nth-child(4) .icon {
             background-image: linear-gradient(
                 rgba(100, 100, 100, 0.322),
                 rgba(0, 0, 0, 0.295)
@@ -560,7 +569,7 @@ body {
             background-repeat: no-repeat;
             background-position: center;
           }
-          &:nth-child(4) .icon {
+          &:nth-child(5) .icon {
             background-image: linear-gradient(
                 rgba(100, 100, 100, 0.322),
                 rgba(0, 0, 0, 0.295)
