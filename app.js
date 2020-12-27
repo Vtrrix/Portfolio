@@ -290,12 +290,14 @@ let words = [
   "HTML",
   "CSS",
   "JavaScript",
+  "TypeScript",
   "ReactJS",
   "Vue",
   "SASS",
   "BootStrap",
   "MaterialUI",
   "NodeJS",
+  "Django",
   "MongoDB",
 ];
 window.addEventListener("load", function () {

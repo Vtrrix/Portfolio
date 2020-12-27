@@ -344,7 +344,6 @@ body {
       position: relative;
       background: linear-gradient(to right, #000000, #434343);
       z-index: 100;
-      width: 100vw;
       height: 100vh;
       overflow: auto;
       grid-column: 2/3;
@@ -459,10 +458,11 @@ body {
 
       #skillset {
         background: rgba(136, 136, 136, 0.671);
-        position: absolute;
-        top: 55%;
+        position: relative;
+        top: 25%;
         width: 100%;
         padding: 4vw 7vw;
+        margin-bottom: 300px;
         @include flexit(row);
         justify-content: space-around;
         flex-wrap: wrap;
@@ -471,6 +471,10 @@ body {
           img {
             width: 5.4rem;
           }
+        }
+        @media (max-width: 800px) {
+          top: 100px;
+          margin-bottom: 150px;
         }
       }
     }
@@ -740,20 +744,25 @@ body {
     }
   }
   @media (max-width: 800px) {
-    .body {
-      overflow: auto;
-      #top,
-      #bottom {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-      }
-      #landing {
-        grid-row: 1/2;
-      }
-      #about {
-        grid-row: 2/3;
-        grid-column: 1/2;
-      }
+    overflow: auto;
+    #top,
+    #bottom {
+      min-height: 0;
+      height: fit-content;
+      min-width: 100vw;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    #top #landing,
+    #bottom #projects {
+      grid-row: 1/2;
+      height: fit-content;
+    }
+    #top #about,
+    #bottom #contact {
+      height: fit-content;
+      grid-row: 2/3;
+      grid-column: 1/2;
     }
   }
 }

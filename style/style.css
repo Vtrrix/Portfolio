@@ -414,7 +414,6 @@ body #top #about {
   background: -webkit-gradient(linear, left top, right top, from(#000000), to(#434343));
   background: linear-gradient(to right, #000000, #434343);
   z-index: 100;
-  width: 100vw;
   height: 100vh;
   overflow: auto;
   -ms-grid-column: 2;
@@ -572,10 +571,11 @@ body #top #about .randomwords .r6 {
 
 body #top #about #skillset {
   background: rgba(136, 136, 136, 0.671);
-  position: absolute;
-  top: 55%;
+  position: relative;
+  top: 25%;
   width: 100%;
   padding: 4vw 7vw;
+  margin-bottom: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -602,6 +602,13 @@ body #top #about #skillset .skill {
 
 body #top #about #skillset .skill img {
   width: 5.4rem;
+}
+
+@media (max-width: 800px) {
+  body #top #about #skillset {
+    top: 100px;
+    margin-bottom: 150px;
+  }
 }
 
 body #bottom {
@@ -989,22 +996,35 @@ body #bottom #contact form .buttonContainer button:hover, body #bottom #contact 
 }
 
 @media (max-width: 800px) {
-  body .body {
+  body {
     overflow: auto;
   }
-  body .body #top,
-  body .body #bottom {
+  body #top,
+  body #bottom {
+    min-height: 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    min-width: 100vw;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
   }
-  body .body #landing {
+  body #top #landing,
+  body #bottom #projects {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
-  body .body #about {
+  body #top #about,
+  body #bottom #contact {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
