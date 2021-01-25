@@ -241,7 +241,7 @@ body {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-    z-index: 2;
+    z-index: 101;
     &:hover,
     &:active {
       opacity: 1;
@@ -751,7 +751,6 @@ body {
       height: fit-content;
       min-width: 100vw;
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
     }
     #top #landing,
     #bottom #projects {

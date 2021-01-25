@@ -258,7 +258,7 @@ body .arrow {
   position: absolute;
   opacity: 0;
   cursor: pointer;
-  z-index: 2;
+  z-index: 101;
 }
 
 body .arrow:hover, body .arrow:active {
@@ -1008,8 +1008,6 @@ body #bottom #contact form .buttonContainer button:hover, body #bottom #contact 
     min-width: 100vw;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
   }
   body #top #landing,
   body #bottom #projects {
